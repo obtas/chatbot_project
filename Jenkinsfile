@@ -8,11 +8,6 @@ pipeline {
             }
         }
         stage('2 - Build') {
-            agent {
-                docker {
-                    image 'python:3.8'
-                }
-            }
             steps {
                 echo 'Building project'
             sh 'docker build -t obtas/chatbot2:latest .'
