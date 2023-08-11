@@ -15,7 +15,7 @@ pipeline {
         }
         stage('3 - Test') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
         stage('4 - Deploy') {
